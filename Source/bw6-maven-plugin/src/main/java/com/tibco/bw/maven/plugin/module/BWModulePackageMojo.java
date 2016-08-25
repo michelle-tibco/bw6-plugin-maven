@@ -326,7 +326,7 @@ public class BWModulePackageMojo  extends AbstractMojo
 		
 		if( name.indexOf(";") != -1 )
 		{
-			name = name.substring(0 , ( name.indexOf(";") -1 ) );
+			name = name.substring(0 , ( name.indexOf(";") ) );
 		}
 		
 		getLog().debug( "Creating Plugin JAR from name  " + name );
